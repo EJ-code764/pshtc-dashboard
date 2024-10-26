@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Rounded" rel="stylesheet" />
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="participants.css">
+    <title>Certifications</title>
+</head>
+<body>
+    <div class="container">
+        <!-- Sidebar Section -->
+        <aside>
+            <div class="toggle">
+                <div class="logo">
+                    <img src="images/logo.png">
+                    <h2>Professional Safe Hands</h2>
+                </div>
+                <div class="close" id="close-btn" >
+                    <span class="material-symbols-rounded">
+                        close
+                        </span>
+                </div>
+            </div>
+
+            <div class="sidebar">
+                <a href="index.html">
+                    <span class="material-symbols-rounded">
+                        dashboard
+                        </span>
+                        <h3>Dashboard</h3>
+                </a>
+                <a href="participants.html">
+                <span class="material-symbols-rounded">
+                    groups
+                    </span>
+                        <h3>Participants</h3>
+                </a>
+                <a href="courses.html">
+                    <span class="material-symbols-rounded">
+                        ecg_heart
+                        </span>
+                        </span>
+                            <h3>Courses</h3>
+                    </a>
+                <a href="trainings.html">
+                    <span class="material-symbols-rounded">
+                        inventory
+                        </span>
+                        <h3>Trainings</h3>
+                </a>
+                <a href="employees.html">
+                    <span class="material-symbols-rounded">
+                        group
+                        </span>
+                            <h3>Employees</h3>
+                    </a>
+                <a href="certifications.html"  class="active">
+                    <span class="material-symbols-rounded">
+                        star
+                        </span>
+                            <h3>Certifications</h3>
+                    </a>
+                    <a href="#">
+                        <span class="material-symbols-rounded">
+                            logout
+                            </span>
+                        <h3>Logout</h3>
+                    </a>
+            </div>
+        </aside>
+        <!-- End of Sidebar Section -->
+
+        <!-- Main Content -->
+        
+        <main>
+            <!-- Header -->
+            <div class="header">
+                <h1>Certifications</h1>
+                <div class="nav">
+                    <button id="menu-btn">
+                        <span class="material-symbols-rounded">
+                            menu
+                            </span>
+                    </button>
+                    <!-- <div class="dark-mode">
+                        <span class="material-symbols-rounded active">
+                            light_mode
+                            </span>
+                        <span class="material-symbols-rounded">
+                                dark_mode
+                                </span>
+                    </div> -->
+    
+                    <div class="profile">
+                        <div class="info">
+                            <p><b>John</b></p>
+                            <small class="text-muted">Admin</small>
+                        </div>
+                    </div>
+                </div>  
+             </div>
+
+            <!-- List of Participants -->
+            <div class="list-participants-participants">
+                <div class="search-sort-container">
+                    <div class="search-container">
+                        <form action="#">
+                            <button type="submit">Search</button>
+                            <input type="text" name="search">
+                        </form>
+                      </div>
+                      <div class="sort-container">
+                        <!-- Add sort container in the future -->
+                      </div>
+                </div>
+                  <h4 style="margin-left: 10px;">Filters</h4>
+                  <div class="filter-container">
+                    <button class="btn active" onclick="filterSelection('all')"> Show all</button>
+                    <button class="btn" onclick="filterSelection('bls')"> BLS Only</button>
+                    <button class="btn" onclick="filterSelection('acls')"> ACLS Only</button>
+                    <button class="btn" onclick="filterSelection('blsalcs')"> BLS & ACLS</button>
+                    <button class="btn" onclick="filterSelection('icd')"> ICD 10</button>
+                    <button class="btn" onclick="filterSelection('him')"> HIM</button>
+                    <button class="btn" onclick="filterSelection('sfa')"> SFA</button>
+                    <button class="btn" onclick="filterSelection('einc')"> EINC</button>
+                    <button class="btn" onclick="filterSelection('ehrm')"> EHRM</button>
+                    <button class="btn" onclick="filterSelection('sp')"> Strategic Planning</button>
+                    <button class="btn" onclick="filterSelection('po')"> Peri - operative Nursing Training</button>
+                    <button class="btn" onclick="filterSelection('btm')"> Basic Trauma Management for ER Nurses</button>
+                  </div>
+                <table>
+                    <thead>
+                        <tr>
+                            <th>ID</th>
+                            <th>PRC Number</th>
+                            <th>Full Name</th>
+                            <th>Gender</th>
+                            <th>Position</th>
+                            <th>Course</th>
+                            <th>Email</th>
+                            <th></th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>01</td>
+                            <td>0987654</td>
+                            <td>John Doe</td>
+                            <td>Male</td>
+                            <td>Nurse</td>
+                            <td>BLS & ACLS</td>
+                            <td>john@example.com</td>
+                            <td>Details</td>
+                        </tr>
+                        <tr></tr>
+                            <td>02</td>
+                            <td>0987654</td>
+                            <td>Jone Doe</td>
+                            <td>Female</td>
+                            <td>Nurse</td>
+                            <td>BLS & ACLS</td>
+                            <td>jone@example.com</td>
+                            <td>Details</td>
+                        </tr>
+                        <tr></tr>
+                            <td>03</td>
+                            <td>0987654</td>
+                            <td>John Doe</td>
+                            <td>Male</td>
+                            <td>Doctor</td>
+                            <td>BLS & ACLS</td>
+                            <td>john@example.com</td>
+                            <td>Details</td>
+                        </tr>
+                        <tr></tr>
+                            <td>04</td>
+                            <td>0987654</td>
+                            <td>Jone Doe</td>
+                            <td>Female</td>
+                            <td>Nurse</td>
+                            <td>BLS & ACLS</td>
+                            <td>jone@example.com</td>
+                            <td>Details</td>
+                        </tr>
+                    </tbody>
+                </table>
+                <a href="#">Show All</a>
+            </div>
+            <!-- End List of Participants -->
+
+        </main>
+        <!-- End of Main -->
+
+    </div>
+</body>
+</html>

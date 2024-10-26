@@ -1,0 +1,156 @@
+
+main {
+    margin-top: 1.4rem;
+    width: 81vw;
+}
+
+.header .nav button {
+    display: none;
+}
+
+/* Search*/
+main .search-container {
+    margin: 10px 0;
+}
+
+main .search-container button {
+    cursor: pointer;
+    border-radius: var(--border-radius-2);
+    width: 100px;
+    color: var(--color-dark-variant);
+    font-family: 'Poppins', 'sans-serif';
+    font-weight: 600;
+    margin-right: 10px;
+    padding: 6px;
+    font-size: 18px;
+    /* border: 1px solid gray; */
+}
+
+main .search-container button:hover{
+    background-color: #ddd;
+}
+
+main .search-container input[type=text] {
+    padding: 6px;
+    padding-left: 15px;
+    margin-top: 8px;
+    font-size: 17px;
+    border: none;
+    border-radius: var(--border-radius-2);
+    color: var(--color-dark-variant);
+  }  
+/* Sort Container */
+
+
+/* Filters */
+.btn {
+    border: none;
+    outline: none;
+    padding: 8px 16px;
+    background-color: #f1f1f1;
+    cursor: pointer;
+    margin: 5px 0;
+    margin-right: 5px;
+    border-radius: var(--border-radius-2);
+    font-family: 'Poppins', 'sans-serif';
+    color: var(--color-dark-variant);
+
+  }
+
+.btn:hover {
+    background-color: #ddd;
+  }
+
+.btn.active {
+    background-color: #666;
+    color: white;
+  }   
+
+/* Table */
+main Table {
+    margin-top: 10px;
+}
+
+main .list-participants-participants {
+    margin-top: 55px;
+    width: 100%;
+}
+
+main .list-participants-participants h2 {
+    margin-bottom: 0.8rem;
+}
+
+main .list-participants-participants table {
+    background-color: var(--color-white);
+    width: 100%;
+    padding: var(--card-padding);
+    text-align: center;
+    box-shadow: var(--box-shadow);
+    border-radius: var(--card-border-radius);
+    transition: all 0.3s ease;
+}
+
+main .list-participants-participants table:hover {
+    box-shadow: none;
+}
+
+main table tbody td {
+    height: 2.8rem;
+    border-bottom: 1px solid var(--color-light);
+    color: var(--color-dark-variant);
+}
+
+main table tbody tr:last-child td {
+    border: none;
+}
+
+main .list-participants-participants a {
+    text-align: center;
+    display: block;
+    margin: 1rem auto;
+    color: var(--color-primary);
+}
+
+/* Right Section Style */
+
+.right-section {
+    margin-top: 1.4rem;
+    border: 1px solid red;
+}
+
+.right-section .nav {
+    display: flex;
+    justify-content: end;
+    gap: 2rem;
+    border: 1px solid red;
+}
+
+.right-section .nav button {
+    display: none;
+}
+
+.right-section .dark-mode {
+    background-color: var(--color-light);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 1.6rem;
+    width: 4.2rem;
+    cursor: pointer;
+    border-radius: var(--border-radius-1);
+}
+
+.right-section .dark-mode span {
+    font-size: 1.2rem;
+    width: 50%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.right-section .dark-mode span.active {
+    background-color: var(--color-primary);
+    color: white;
+    border-radius: var(--border-radius-1);
+}

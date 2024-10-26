@@ -1,0 +1,40 @@
+main .list-participants-participants .training {
+    background-color: var(--color-white);
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    margin-bottom: 0.7rem;
+    padding: 1.4rem var(--card-padding);
+    border-radius: var(--border-radius-2);
+    box-shadow: var(--box-shadow);
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.list-participants-participants .training:hover {
+    box-shadow: none;
+}
+
+.list-participants-participants .training .content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 0;
+    width: 100%;
+}
+
+.list-participants-participants .training .info h3 {
+    font-size: 2.5em;
+}
+
+.list-participants-participants .training .icon {
+    padding: 0.6rem;
+    color: var(--color-white);
+    background-color: var(--color-success);
+    border-radius: 20%;
+    display: flex;
+}
+
+.list-participants-participants .training.deactive .icon {
+    background-color: var(--color-danger);
+}

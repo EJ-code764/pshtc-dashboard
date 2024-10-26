@@ -1,0 +1,248 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Rounded" rel="stylesheet" />
+    <link rel="stylesheet" href="style.css">
+    <title>Dashboard</title>
+</head>
+<body>
+    <div class="container">
+        <!-- Sidebar Section -->
+        <aside>
+            <div class="toggle">
+                <div class="logo">
+                    <img src="images/logo.png">
+                    <h2>Professional Safe Hands</h2>
+                </div>
+                <div class="close" id="close-btn" >
+                    <span class="material-symbols-rounded">
+                        close
+                        </span>
+                </div>
+            </div>
+
+            <div class="sidebar">
+                <a href="index.html" class="active">
+                    <span class="material-symbols-rounded">
+                        dashboard
+                        </span>
+                        <h3>Dashboard</h3>
+                </a>
+                <a href="participants.html">
+                <span class="material-symbols-rounded">
+                    groups
+                    </span>
+                        <h3>Participants</h3>
+                </a>
+                <a href="courses.html">
+                    <span class="material-symbols-rounded">
+                        ecg_heart
+                        </span>
+                        </span>
+                            <h3>Courses</h3>
+                    </a>
+                <a href="trainings.html">
+                    <span class="material-symbols-rounded">
+                        inventory
+                        </span>
+                        <h3>Trainings</h3>
+                </a>
+                <a href="employees.html">
+                    <span class="material-symbols-rounded">
+                        group
+                        </span>
+                            <h3>Employees</h3>
+                    </a>
+                <a href="certifications.html">
+                    <span class="material-symbols-rounded">
+                        star
+                        </span>
+                            <h3>Certifications</h3>
+                    </a>
+                    <a href="#">
+                        <span class="material-symbols-rounded">
+                            logout
+                            </span>
+                        <h3>Logout</h3>
+                    </a>
+            </div>
+        </aside>
+        <!-- End of Sidebar Section -->
+
+        <!-- Main Content -->
+        <main>
+            <div class="header">
+                <h1>Dashboard</h1>
+                <div class="nav">
+                    <button id="menu-btn">
+                        <span class="material-symbols-rounded">
+                            menu
+                            </span>
+                    </button>
+                    <!-- <div class="dark-mode">
+                        <span class="material-symbols-rounded active">
+                            light_mode
+                            </span>
+                        <span class="material-symbols-rounded">
+                                dark_mode
+                                </span>
+                    </div> -->
+    
+                    <div class="profile">
+                        <div class="info">
+                            <p><b>John</b></p>
+                            <small class="text-muted">Admin</small>
+                        </div>
+                    </div>
+                </div>  
+             </div>
+            <!-- Analyze Section -->
+            <div class="analyse">
+                <div class="total-participated">
+                    <div class="status">
+                        <div class="info">
+                            <h3>Total Participated</h3>
+                            <h1>1,234</h1>
+                        </div>
+                    </div>
+                </div>
+                <div class="total-trainings">
+                    <div class="status">
+                        <div class="info">
+                            <h3>Total Trainings</h3>
+                            <h1>234</h1>
+                        </div>
+                        </div> 
+                </div>
+                <div class="total-courses">
+                    <div class="status">
+                        <div class="info">
+                            <h3>Total Courses</h3>
+                            <h1>9</h1>
+                        </div>
+                    </div> 
+                </div>
+            </div>
+            <!-- End of Analyze Section -->
+
+            <!-- List of Participants -->
+            <div class="list-participants">
+                <h2>List of Participants</h2>
+                <table>
+                    <thead>
+                        <tr>
+                            <th>ID</th>
+                            <th>Full Name</th>
+                            <th>Gender</th>
+                            <th>Course</th>
+                            <th>Email</th>
+                            <th></th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>01</td>
+                            <td>John Doe</td>
+                            <td>Male</td>
+                            <td>BLS & ACLS</td>
+                            <td>john@example.com</td>
+                            <td>Details</td>
+                        </tr>
+                        <tr></tr>
+                            <td>02</td>
+                            <td>Jone Doe</td>
+                            <td>Female</td>
+                            <td>BLS & ACLS</td>
+                            <td>jone@example.com</td>
+                            <td>Details</td>
+                        </tr>
+                        <tr></tr>
+                            <td>03</td>
+                            <td>John Doe</td>
+                            <td>Male</td>
+                            <td>BLS & ACLS</td>
+                            <td>john@example.com</td>
+                            <td>Details</td>
+                        </tr>
+                        <tr></tr>
+                            <td>04</td>
+                            <td>Jone Doe</td>
+                            <td>Female</td>
+                            <td>BLS & ACLS</td>
+                            <td>jone@example.com</td>
+                            <td>Details</td>
+                        </tr>
+                    </tbody>
+                </table>
+                <a href="#">Show All</a>
+            </div>
+            <!-- End List of Participants -->
+
+        </main>
+        <!-- End of Main -->
+
+        <!-- Right Section -->
+
+        <div class="right-section">
+            <div class="user-profile">
+                <div class="logo">
+                    <img src="images/logo.png">
+                    <h2>John Doe</h2>
+                    <p>Director</p>
+                </div>
+            </div>
+
+            <div class="next-training">
+                <div class="header">
+                    <h2>Next Training</h2>
+                    <span class="material-symbols-rounded">
+                        notifications
+                        </span>
+                </div>
+
+                <div class="training">
+                    <div class="icon">
+                        <span class="material-symbols-rounded">
+                            favorite
+                            </span>
+                    </div>
+                    <div class="content">
+                        <div class="info">
+                            <h3>BLS & ACLS</h3>
+                            <small class="text-muted">September 27, 2024</small>
+                            <br>
+                            <small class="text-muted">Tacurong</small>
+                        </div>
+                        <span class="material-symbols-rounded">
+                            more_vert
+                            </span>
+                    </div>
+                </div>
+
+                <div class="training deactive">
+                    <div class="icon">
+                        <span class="material-symbols-rounded">
+                            medical_services
+                            </span>
+                    </div>
+                    <div class="content">
+                        <div class="info">
+                            <h3>Standard First Aid</h3>
+                            <small class="text-muted">October 12, 2024</small>
+                            <br>
+                            <small class="text-muted">Buluan</small>
+                        </div>
+                        <span class="material-symbols-rounded">
+                            more_vert
+                            </span>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+
+    </div>
+</body>
+</html>
